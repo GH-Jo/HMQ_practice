@@ -3,6 +3,7 @@ import torch
 
 from tqdm import tqdm
 #from apex import amp
+from torch.cuda import amp
 from quantization_common.quantization_information import calculate_expected_weight_compression
 from datasets.data_prefercher import DataPreFetcher
 

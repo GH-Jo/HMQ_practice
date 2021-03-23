@@ -30,7 +30,7 @@ def get_arguments():
                         help='Weights and Bias logging folder path')
     parser.add_argument('--data_dir', type=str, default='/data/imagenet', help='Dataset folder')
     parser.add_argument('--tag', type=str, default='', help='Tagging string')
-    parser.add_argument('--num_workers', type=int, default=8, help='Number of workers for dataset reading')
+    parser.add_argument('--num_workers', type=int, default=16, help='Number of workers for dataset reading')
     parser.add_argument('--dataset', type=str, default='ImageNet', help='Dataset name', choices=['CIFAR10', 'ImageNet'])
     parser.add_argument('--network_name', type=str, default='resnet18_cifar', help='network name',
                         choices=[ 'mobilenet_v1','mobilenet_v2','resnet50'])
